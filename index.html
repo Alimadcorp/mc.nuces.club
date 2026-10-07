@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAST CRAFT</title>
+    <meta name="description"
+        content="A free Minecraft server for students of Lahore. Survival, Creative, OneBlock and more. Join and chill at mc.nuces.club (Java 1.8+) :D">
+    <meta name="theme-color" content="#0c0f14">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/xq9crgXk/server-icon.png">
+    <meta property="og:title" content="FAST CRAFT">
+    <meta property="og:description"
+        content="A free Minecraft server for students of Lahore. Survival, Creative, OneBlock and more. Join and chill at mc.nuces.club (Java 1.8+) :D">
+    <meta property="og:image" content="https://i.ibb.co/xq9crgXk/server-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=VT323&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top">
+        <div class="wrap top-in">
+            <a class="brand" href="https://nuces.club">
+                <img style="display: none;" src="https://nuces.club/favicon.png" alt="" width="34" height="34">
+                <span>FAST Hack Club</span>
+            </a>
+            <nav class="links" aria-label="Main">
+                <a href="#modes">Gamemodes</a>
+                <a href="#plugins">Plugins</a>
+                <a class="btn btn-accent btn-sm" style="color: black;" href="#join">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div>
+                    <h1>Minecڑaft for all of Lahoڑe.</h1>
+                    <p class="lead">A simple and scalable Minecraft server run by a smoll student community at FAST.</p>
+
+                    <button class="ip-box" type="button" data-copy="mc.nuces.club"
+                        aria-label="Copy server IP mc.nuces.club">
+                        <span class="ip-text">
+                            <small>Java Edition, versions 1.8 and up</small>
+                            <strong>mc.nuces.club</strong>
+                        </span>
+                        <span class="ip-copy">Copy IP</span>
+                    </button>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-discord" data-link="discord" href="#" target="_blank"
+                            rel="noopener">Discord</a>
+                        <a class="btn btn-whatsapp" data-link="whatsapp" href="#" target="_blank"
+                            rel="noopener">WhatsApp</a>
+                        <a class="btn btn-accent" href="#join">How to join</a>
+                    </div>
+                    <p class="note">Don't have Minecraft yet? The <a href="#join" style="color:var(--accent)">join
+                            guide</a> below walks you through it.</p>
+                </div>
+
+
+                <div class="status-card" aria-live="polite">
+                    <div class="entry">
+                        <img class="entry-icon" src="https://i.ibb.co/xq9crgXk/server-icon.png" alt="Server icon"
+                            width="72" height="72">
+                        <div class="entry-main">
+                            <div class="entry-top">
+                                <span>Minecraft Server</span>
+                                <span class="entry-count" id="count">…</span>
+                            </div>
+                            <div class="motd" id="motd">
+                                <div class="motd-line">Checking server…</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="status-row">
+                        <span class="pill" id="pill" data-state="checking"><span class="dot"></span><span
+                                id="pill-text">Checking</span></span>
+                        <span class="tag">Paper 26.3</span>
+                        <span class="tag">Singapore</span>
+                        <span class="tag">Average ping ~136ms</span>
+                    </div>
+
+                    <div class="players">
+                        <div class="players-head">
+                            <h3>Players online</h3>
+                        </div>
+                        <ul class="player-list" id="player-list"></ul>
+                        <p class="empty" id="player-empty">Loading players…</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="modes">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Gamemodes</h2>
+                    <p>We are actively adding more gamemodes as saare log aik hi cheez me interested nahi hote, am I
+                        right?</p>
+                </div>
+                <div class="modes">
+                    <article class="mode">
+                        <h3>Survival</h3>
+                        <p>Normal difficulty, no keep inventory but we do have GravesX!</p>
+                    </article>
+                    <article class="mode">
+                        <h3>Creative</h3>
+                        <p>Please don't go exploding everyone's builds</p>
+                    </article>
+                    <article class="mode">
+                        <h3>OneBlock</h3>
+                        <p>-no matter how ridiculous the odds may seem, within us resides the power to overcome these
+                            challenges and achieve something beautiful. That one day, we'll look back at where we
+                            started and be amazed by how far we've come.</p>
+                    </article>
+                    <article class="mode soon">
+                        <h3>More coming soon</h3>
+                        <p>Bedwars, Skywars and other minigames are on the way.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="plugins">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Plugins we have</h2>
+                </div>
+                <ul class="plugin-list">
+                    <li class="plugin">
+                        <div class="plugin-name">
+                            <h3>VoiceChat</h3>
+                        </div>
+                        <p>You'll need to install the Simple Voice Chat plugin to use this! <b><a
+                                    href="https://www.youtube.com/watch?v=77ipPPOp5DE" target="_blank">Click here for
+                                    install tutorial.</b></a></p>
+                    </li>
+                    <li class="plugin">
+                        <div class="plugin-name">
+                            <h3>AllTheWebhooks</h3>
+                        </div>
+                        <p>The server chat is bridged to our Discord and WhatsApp. Talk to people in-game from your
+                            phone, and the other way around.</p>
+                    </li>
+                    <li class="plugin">
+                        <div class="plugin-name">
+                            <h3>ImageFrame</h3>
+                        </div>
+                        <p>Really cool stuff. Allows u to put gifs and images to in-game maps easily</p>
+                    </li>
+                    <li class="plugin">
+                        <div class="plugin-name">
+                            <h3>GravesX</h3>
+                        </div>
+                        <p>Die in the survival world and your items are kept safe in a grave. Come back any time to pick
+                            them up, with no risk of losing anything.</p>
+                    </li>
+                    <li class="plugin">
+                        <div class="plugin-name">
+                            <h3>GSit</h3>
+                        </div>
+                        <p>Sit on the ground, players, and be able to crawl!</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="join">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>How to join</h2>
+                    <p>It takes about five minutes (ya phir 2 hours depending on ur setup). But please be patient, it is
+                        all worth it</p>
+                </div>
+
+                <div class="guide">
+                    <div class="ask" id="ask">
+                        <h3>Do you already have Minecraft installed?</h3>
+                        <p>Pick one to see the relevant steps.</p>
+                        <div class="ask-btns">
+                            <button class="btn btn-accent" type="button" data-path="yes">Yes, I have Minecraft</button>
+                            <button class="btn btn-ghost" type="button" data-path="no">No, I don't</button>
+                        </div>
+                    </div>
+
+                    <div id="steps-wrap" hidden>
+                        <div class="steps-head">
+                            <h3 id="steps-title"></h3>
+                            <button class="link-btn" type="button" id="reset">Change answer</button>
+                        </div>
+
+                        <ol class="steps" id="steps">
+
+
+                            <li data-only="no">
+                                <h4>Download TLauncher</h4>
+                                <p>Go to <a href="https://tlauncher.org"><strong>tlauncher.org</strong></a> and click
+                                    the download button for your system
+                                    (Windows, macOS or Linux). Only download it from the official TLauncher site.</p>
+                                <div class="shot"><img loading="lazy" src="https://i.ibb.co/5WK7ZF3K/image.png"
+                                        alt="The TLauncher website with the download button highlighted"></div>
+                            </li>
+                            <li data-only="no">
+                                <h4>Install and open it</h4>
+                                <p>Run the file you downloaded and follow the installer. When TLauncher opens, type any
+                                    username you like. This is the name other players will see.</p>
+                            </li>
+                            <li data-only="no">
+                                <h4>Install a version and launch it</h4>
+                                <p>Pick a version from the list next to the green button. Any version from 1.8 up to the
+                                    latest works on our server. This is also the point where you can install the Simple
+                                    Voice Chat mod, for which, check out <a
+                                        href="https://www.youtube.com/watch?v=77ipPPOp5DE"><b>this video.</b></a></p>
+                                <p>Click <strong>Enter the game</strong>. The first time, it downloads the game files,
+                                    so give it a minute. Minecraft will open when it's done.</p>
+                                <div class="shot"><img loading="lazy" src="https://i.ibb.co/pvMCkb2G/image.png"
+                                        alt="The Enter the game button in TLauncher"></div>
+                            </li>
+
+                            <li data-only="yes">
+                                <h4>Launch Minecraft</h4>
+                                <p>Open Minecraft Java Edition with any version from 1.8 up to the latest.</p>
+                            </li>
+
+
+                            <li>
+                                <h4>Open Multiplayer and click Add Server</h4>
+                                <p>On the main menu, click <strong>Multiplayer</strong>. If a safety warning appears,
+                                    continue past it. Then click <strong>Add Server</strong> at the bottom.</p>
+                                <div class="shot"><img loading="lazy" src="https://i.ibb.co/C37YqXCs/image.png"
+                                        alt="The Add Server button in Minecraft's multiplayer screen, with an arrow pointing at it">
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Type the server name and IP</h4>
+                                <p>For the server name, type anything you
+                                    like. For the server address, type <code
+                                        class="copyable">mc.nuces.club<button type="button" data-copy="mc.nuces.club">Copy</button></code>
+                                    and then click <strong>Done</strong>.</p>
+                                <div class="shot"><img loading="lazy" src="https://i.ibb.co/7NYPc3Fs/image.png"
+                                        alt="Typing the server name and address, then clicking Done"></div>
+                            </li>
+                            <li>
+                                <h4>Join and say hi</h4>
+                                <p>Select the server in your list and click <strong>Join Server</strong>. That's it,
+                                    you're in. Come say hi on Discord or WhatsApp too.</p>
+                                <div class="join-cta">
+                                    <a class="btn btn-discord btn-sm" data-link="discord" href="#" target="_blank"
+                                        rel="noopener">Discord</a>
+                                    <a class="btn btn-whatsapp btn-sm" data-link="whatsapp" href="#" target="_blank"
+                                        rel="noopener">WhatsApp</a>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="modes">
+            <div class="wrap">
+                <div class="section-head">
+                    <h2>Looking for staff</h2>
+                    <p>We need active moderation and staff for the scaling of this server. If you are interested to do this, please contact me at <a href="mailto:mc@alimad.co">mc@alimad.co</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap foot">
+            <p>Made with &lt;3 and :3 by <a href="https://alimad.co"><strong>Muhammad Ali</strong></a>.
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script>
+        (function () {
+            "use strict";
+            var CONFIG = {
+                host: "mc.nuces.club",
+                discord: "https://discord.gg/jxYRjD4zAW",
+                whatsapp: "https://chat.whatsapp.com/Er3RNgI7TxxAU8k7xjeESs"
+            };
+            var REFRESH_MS = 30000;
+
+
+            document.querySelectorAll("[data-link]").forEach(function (a) {
+                a.href = CONFIG[a.getAttribute("data-link")];
+            });
+
+
+            var toast = document.getElementById("toast");
+            var toastTimer;
+            function showToast(msg) {
+                toast.textContent = msg;
+                toast.classList.add("show");
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(function () { toast.classList.remove("show"); }, 1800);
+            }
+            function copyText(text) {
+                if (navigator.clipboard && window.isSecureContext) {
+                    return navigator.clipboard.writeText(text);
+                }
+                return new Promise(function (resolve, reject) {
+                    var ta = document.createElement("textarea");
+                    ta.value = text; ta.setAttribute("readonly", "");
+                    ta.style.position = "fixed"; ta.style.opacity = "0";
+                    document.body.appendChild(ta); ta.select();
+                    try { document.execCommand("copy") ? resolve() : reject(); } catch (e) { reject(e); }
+                    document.body.removeChild(ta);
+                });
+            }
+            document.addEventListener("click", function (e) {
+                var el = e.target.closest("[data-copy]");
+                if (!el) return;
+                var text = el.getAttribute("data-copy");
+                copyText(text).then(
+                    function () { showToast("Copied " + text); },
+                    function () { showToast("Couldn't copy. Select the IP and copy it manually."); }
+                );
+            });
+
+
+            var COLORS = {
+                "0": "#000000", "1": "#0000aa", "2": "#00aa00", "3": "#00aaaa",
+                "4": "#aa0000", "5": "#aa00aa", "6": "#ffaa00", "7": "#aaaaaa",
+                "8": "#555555", "9": "#5555ff", "a": "#55ff55", "b": "#55ffff",
+                "c": "#ff5555", "d": "#ff55ff", "e": "#ffff55", "f": "#ffffff"
+            };
+            function renderMotd(raw, el) {
+                el.textContent = "";
+                var lines = String(raw || "").split("\n");
+                lines.slice(0, 2).forEach(function (line) {
+                    var row = document.createElement("div");
+                    row.className = "motd-line";
+                    var st = {};
+                    var buf = "";
+                    function flush() {
+                        if (!buf) return;
+                        var s = document.createElement("span");
+                        s.textContent = buf;
+                        if (st.color) s.style.color = st.color;
+                        if (st.bold) s.style.fontWeight = "700";
+                        if (st.italic) s.style.fontStyle = "italic";
+                        var deco = [];
+                        if (st.underline) deco.push("underline");
+                        if (st.strike) deco.push("line-through");
+                        if (deco.length) s.style.textDecoration = deco.join(" ");
+                        row.appendChild(s);
+                        buf = "";
+                    }
+                    for (var i = 0; i < line.length; i++) {
+                        var ch = line[i];
+                        if (ch === "\u00a7" && i + 1 < line.length) {
+                            var code = line[i + 1].toLowerCase();
+                            if (code === "x") {
+                                var m = line.slice(i + 2, i + 14).match(/^(?:\u00a7[0-9a-f]){6}$/i);
+                                if (m) {
+                                    flush();
+                                    st = { color: "#" + m[0].replace(/\u00a7/g, "") };
+                                    i += 13;
+                                    continue;
+                                }
+                            }
+                            i++;
+                            flush();
+                            if (COLORS[code]) st = { color: COLORS[code] };
+                            else if (code === "l") st.bold = true;
+                            else if (code === "o") st.italic = true;
+                            else if (code === "n") st.underline = true;
+                            else if (code === "m") st.strike = true;
+                            else if (code === "r") st = {};
+                        } else {
+                            buf += ch;
+                        }
+                    }
+                    flush();
+                    if (!row.childNodes.length) row.appendChild(document.createTextNode("\u00a0"));
+                    el.appendChild(row);
+                });
+            }
+
+
+            var els = {
+                count: document.getElementById("count"),
+                motd: document.getElementById("motd"),
+                pill: document.getElementById("pill"),
+                pillText: document.getElementById("pill-text"),
+                list: document.getElementById("player-list"),
+                empty: document.getElementById("player-empty"),
+                sub: document.getElementById("players-sub")
+            };
+
+            function fetchJson(url) {
+                return fetch(url, { cache: "no-store" }).then(function (r) {
+                    if (!r.ok) throw new Error("HTTP " + r.status);
+                    return r.json();
+                });
+            }
+
+            function getStatus() {
+                return fetchJson("https://api.mcstatus.io/v2/status/java/" + CONFIG.host)
+                    .then(function (j) {
+                        var players = j.players || {};
+                        return {
+                            online: !!j.online,
+                            current: players.online || 0,
+                            max: players.max || 0,
+                            names: (players.list || []).map(function (p) { return p.name_clean || p.name_raw; }).filter(Boolean),
+                            motd: j.motd && j.motd.raw
+                        };
+                    })
+                    .catch(function () {
+                        return fetchJson("https://api.mcsrvstat.us/3/" + CONFIG.host).then(function (j) {
+                            var players = j.players || {};
+                            return {
+                                online: !!j.online,
+                                current: players.online || 0,
+                                max: players.max || 0,
+                                names: (players.list || []).map(function (p) { return p.name; }).filter(Boolean),
+                                motd: j.motd && j.motd.raw ? [].concat(j.motd.raw).join("\n") : ""
+                            };
+                        });
+                    });
+            }
+
+            function setPill(state, text) {
+                els.pill.setAttribute("data-state", state);
+                els.pillText.textContent = text;
+            }
+
+            function renderPlayers(s) {
+                els.list.textContent = "";
+                if (!s.online) {
+                    els.empty.hidden = false;
+                    els.empty.textContent = "The server is offline right now. Check back in a bit.";
+                    return;
+                }
+                if (s.current === 0) {
+                    els.empty.hidden = false;
+                    els.empty.textContent = "Nobody is online yet. Be the first to join.";
+                    return;
+                }
+                if (!s.names.length) {
+                    els.empty.hidden = false;
+                    els.empty.textContent = s.current + (s.current === 1 ? " player is" : " players are") + " online.";
+                    return;
+                }
+                els.empty.hidden = true;
+                s.names.forEach(function (name) {
+                    var li = document.createElement("li");
+                    var img = document.createElement("img");
+                    img.src = "https://mc-heads.net/avatar/" + encodeURIComponent(name) + "/56";
+                    img.alt = ""; img.width = 28; img.height = 28; img.loading = "lazy";
+                    img.onerror = function () { img.style.visibility = "hidden"; };
+                    var span = document.createElement("span");
+                    span.textContent = name;
+                    li.appendChild(img); li.appendChild(span);
+                    els.list.appendChild(li);
+                });
+                if (s.current > s.names.length) {
+                    var more = document.createElement("li");
+                    var t = document.createElement("span");
+                    t.style.color = "var(--muted)";
+                    t.textContent = "+" + (s.current - s.names.length) + " more";
+                    more.style.paddingLeft = "12px";
+                    more.appendChild(t);
+                    els.list.appendChild(more);
+                }
+            }
+
+            function update() {
+                getStatus().then(function (s) {
+                    if (s.online) {
+                        setPill("online", "Online");
+                        els.count.textContent = s.current + " / " + s.max;
+                        renderMotd(s.motd, els.motd);
+                    } else {
+                        setPill("offline", "Offline");
+                        els.count.textContent = "0 / 0";
+                        renderMotd("\u00a7cServer is offline right now", els.motd);
+                    }
+                    renderPlayers(s);
+                }).catch(function () {
+                    setPill("checking", "Status unavailable");
+                    els.count.textContent = "?";
+                    renderMotd("\u00a77Failed to load status.", els.motd);
+                    els.list.textContent = "";
+                    els.empty.hidden = false;
+                    els.empty.textContent = "Couldn't load the player list.";
+                });
+            }
+            update();
+            setInterval(update, REFRESH_MS);
+
+
+            var ask = document.getElementById("ask");
+            var stepsWrap = document.getElementById("steps-wrap");
+            var stepsTitle = document.getElementById("steps-title");
+            var stepItems = document.querySelectorAll("#steps > li");
+
+            function choosePath(path) {
+                stepItems.forEach(function (li) {
+                    var only = li.getAttribute("data-only");
+                    li.hidden = !!only && only !== path;
+                });
+                stepsTitle.textContent = path === "yes"
+                    ? "Great, you only need to add the server"
+                    : "No problem, setting up a launcher is easy";
+                ask.hidden = true;
+                stepsWrap.hidden = false;
+            }
+            document.querySelectorAll("[data-path]").forEach(function (b) {
+                b.addEventListener("click", function () { choosePath(b.getAttribute("data-path")); });
+            });
+            document.getElementById("reset").addEventListener("click", function () {
+                stepsWrap.hidden = true;
+                ask.hidden = false;
+            });
+        })();
+    </script>
+</body>
+
+</html>
